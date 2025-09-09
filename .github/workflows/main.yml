@@ -16,4 +16,6 @@ jobs:
       
       - name: Use Node.js
         run: npm run test
-  
+
+      - name: Run linter
+        run: npm run lint
