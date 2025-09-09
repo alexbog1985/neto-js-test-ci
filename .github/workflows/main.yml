@@ -1,0 +1,13 @@
+name: CI Pipeline
+on: [push]  #Запуск при push в репозиторий
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v4
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm run test
+  
